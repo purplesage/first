@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;700&display=swap');
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+margin:0;
+padding:0;
+border:0;
+outline:0;
+font-size:100%;
+vertical-align:baseline;
+background:transparent;
+}
+
+body {
+line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+display:block;
+}
+
+nav ul {
+list-style:none;
+}
+
+blockquote, q {
+quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+content:'';
+content:none;
+}
+
+a {
+margin:0;
+padding:0;
+font-size:100%;
+vertical-align:baseline;
+background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+background-color:#ff9;
+color:#000;
+text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+background-color:#ff9;
+color:#000;
+font-style:italic;
+font-weight:bold;
+}
+
+del {
+text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+border-bottom:1px dotted;
+cursor:help;
+}
+
+table {
+border-collapse:collapse;
+border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+display:block;
+height:1px;
+border:0;
+border-top:1px solid #cccccc;
+margin:1em 0;
+padding:0;
+}
+
+input, select {
+vertical-align:middle;
+}
+
+/* my code ----------------------------- */
+
+.project{
+    display:flex;
+    flex-direction: column;
+    font-family: 'Teko', sans-serif;
+    padding: 3em 3em 3em 3em;
+    
+    
+
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(49, 49, 49);
+    color: white;
+    padding: 1.1em;
+    align-items: center;
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .logo a{
+        color: rgb(255, 6, 159);
+        font-weight: bolder;
+        font-size: 1.1em;
+        letter-spacing: 5px;
+        text-decoration:double;
+        background-color: rgb(49, 49, 49);
+        padding: .3em;
+        box-shadow: magenta 1.5px 1.5px 1.5px;
+        border: rgb(255, 251, 1) 2px solid;
+        border-style: inset;
+        
+    }
+        
+
+    .links{
+        display:flex;
+        gap: 2em;
+        font-family: 'Teko', sans-serif;
+        font-size: 1.2em;
+        margin-right: 8em;
+        font-weight: bold;
+
+        a:hover{
+            color:rgb(255, 251, 1) !important;
+            letter-spacing: 4px;
+        }
+    }
+
+    
+
+}
+
+.hero{
+    display: flex;
+    background-color: rgba(255, 255, 0, 1);
+    justify-content: space-around;
+    align-items: center;
+    padding: 2em;
+    border: rgb(49, 49, 49) 2px solid;
+    
+    img{
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        box-shadow: turquoise -3px 2px 3px;
+        border: rgb(43, 163, 151) 1px solid;
+    }
+
+    .text{
+        display: flex;
+        flex-direction: column;
+        gap: .5em;
+
+    
+        h1{
+            font-size: 2.5em;
+        }
+        p{
+            font-size: 1.3em;
+        }
+
+        button{
+            border: turquoise 3px solid;
+            border-radius: 1em;
+            font-family: 'Teko', sans-serif;
+            font-size: 1.8em;
+            background-color: rgb(255, 6, 159);
+            margin-top: 1.5em;
+            width: fit-content;
+            padding: .3em;
+            color: white;
+            border-style: outset;
+
+            &:hover{
+                cursor: pointer;
+                background-color: rgba(255, 255, 0, 1);
+                border: rgb(3, 3, 3) 2px solid;
+                border-radius: 1em;
+                color:black;
+                border-style: inset;
+            }
+            
+        
+        }
+}
+
+    
+
+}
+
+.content{
+    display: flex;
+    flex-direction: column; 
+}
+
+
+
+.images-text .images{
+    display: flex;
+}
+
+.quote{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+}
+
