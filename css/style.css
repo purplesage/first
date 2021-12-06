@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Teko:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Smooch&family=Teko:wght@400;700&display=swap");
 /*
 html5doctor.com Reset Stylesheet
 v1.6.1
@@ -111,7 +112,6 @@ input, select {
       -ms-flex-direction: column;
           flex-direction: column;
   font-family: 'Teko', sans-serif;
-  padding: 3em 3em 3em 3em;
 }
 
 .header {
@@ -187,9 +187,7 @@ input, select {
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  -webkit-box-shadow: turquoise -3px 2px 3px;
-          box-shadow: turquoise -3px 2px 3px;
-  border: #2ba397 1px solid;
+  border: #ff0062 5px solid;
 }
 
 .hero .text {
@@ -243,12 +241,47 @@ input, select {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-image: url(assets/brickwall.avif);
+  padding: 1em;
 }
 
-.images-text .images {
+.content p.dev {
+  text-align: center;
+  font-size: 4em;
+  color: #61f8e9;
+  font-family: 'Smooch', cursive;
+  text-shadow: #ff006a 2px 2px 2px;
+}
+
+.content img {
+  height: 250px;
+  width: 200px;
+  border: rgba(111, 0, 155, 0.397) 2px solid;
+  border-radius: 50%;
+  -webkit-box-shadow: magenta 1px 4px 3px;
+          box-shadow: magenta 1px 4px 3px;
+}
+
+.content .images {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 3em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1em;
+}
+
+.content .images-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: .8em;
+  gap: 13em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .quote {

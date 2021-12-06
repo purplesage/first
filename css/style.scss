@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Smooch&family=Teko:wght@400;700&display=swap');
 /*
 html5doctor.com Reset Stylesheet
 v1.6.1
@@ -104,11 +106,14 @@ vertical-align:middle;
 
 /* my code ----------------------------- */
 
+
+
+
 .project{
     display:flex;
     flex-direction: column;
     font-family: 'Teko', sans-serif;
-    padding: 3em 3em 3em 3em;
+    
     
     
 
@@ -173,8 +178,8 @@ vertical-align:middle;
         width: 300px;
         height: 300px;
         border-radius: 50%;
-        box-shadow: turquoise -3px 2px 3px;
-        border: rgb(43, 163, 151) 1px solid;
+        border: rgb(255, 0, 98) 5px solid;
+        
     }
 
     .text{
@@ -221,14 +226,53 @@ vertical-align:middle;
 
 .content{
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
+    background-image: url(assets/brickwall.avif);
+    padding: 1em;
+    
+    
+
+    p.dev{
+        text-align: center;
+        font-size: 4em;
+        color: rgb(97, 248, 233);
+        font-family: 'Smooch', cursive;
+        text-shadow: rgb(255, 0, 106) 2px 2px 2px;
+        
+    }
+    
+    
+    img{
+        height: 250px;
+        width: 200px;
+        border: rgba(111, 0, 155, 0.397) 2px solid;
+        border-radius: 50%;
+        box-shadow: magenta 1px 4px 3px;
+    }
+
+    .images{
+        display: flex;
+        gap: 3em;
+        justify-content: center;
+        margin-top: 1em;
+    
+        
+    }
+
+    .images-text{
+        display: flex;
+        font-size: .8em;
+        gap: 13em;
+        justify-content: center;
+        
+
+        
+    }
 }
 
 
 
-.images-text .images{
-    display: flex;
-}
+
 
 .quote{
     display: flex;
