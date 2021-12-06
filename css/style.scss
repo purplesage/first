@@ -228,6 +228,8 @@ vertical-align:middle;
     display: flex;
     flex-direction: column;
     background-image: url(assets/brickwall.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 1em;
     
     
@@ -261,18 +263,19 @@ vertical-align:middle;
 
     .images-text{
         display: flex;
-        font-size: .8em;
-        gap: 13em;
+        font-size: 1.7em;
+        gap: 5em;
         justify-content: center;
+        font-weight: bold;
+        margin-top: 23px;
+        color: yellow;
+        text-shadow: black 2px 2px 2px;
+        
         
 
         
     }
 }
-
-
-
-
 
 .quote{
     display: flex;
