@@ -131,6 +131,8 @@ input, select {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: fixed;
+  width: 100%;
 }
 
 .header a {
@@ -181,6 +183,7 @@ input, select {
           align-items: center;
   padding: 2em;
   border: #313131 2px solid;
+  margin-top: 50px;
 }
 
 .hero img {
@@ -199,6 +202,7 @@ input, select {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: .5em;
+  margin-left: 170px;
 }
 
 .hero .text h1 {
@@ -230,7 +234,6 @@ input, select {
   border: #030303 2px solid;
   border-radius: 1em;
   color: black;
-  border-style: inset;
 }
 
 .content {
@@ -245,6 +248,7 @@ input, select {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 1em;
+  border: #313131 2px solid;
 }
 
 .content p.dev {
@@ -253,15 +257,6 @@ input, select {
   color: #61f8e9;
   font-family: 'Smooch', cursive;
   text-shadow: #ff006a 2px 2px 2px;
-}
-
-.content img {
-  height: 250px;
-  width: 200px;
-  border: rgba(111, 0, 155, 0.397) 2px solid;
-  border-radius: 50%;
-  -webkit-box-shadow: magenta 1px 4px 3px;
-          box-shadow: magenta 1px 4px 3px;
 }
 
 .content .images {
@@ -273,6 +268,15 @@ input, select {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 1em;
+}
+
+.content .images img {
+  height: 250px;
+  width: 200px;
+  border: rgba(160, 1, 223, 0.8) 3px solid;
+  border-radius: 50%;
+  -webkit-box-shadow: magenta 0.5px 4px 3px;
+          box-shadow: magenta 0.5px 4px 3px;
 }
 
 .content .images-text {
@@ -290,7 +294,66 @@ input, select {
   text-shadow: black 2px 2px 2px;
 }
 
-.quote {
+.quote-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1em;
+  border: #313131 2px solid;
+}
+
+.quote-block .quote {
+  font-family: 'Teko', sans-serif;
+  color: black;
+  text-shadow: red 1px 1px 1px;
+  font-size: 2em;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-top: 200px;
+  width: 300px;
+}
+
+.quote-block .author {
+  font-family: 'Smooch', cursive;
+  font-size: 1.5em;
+  margin-bottom: 2em;
+}
+
+.quote-block img {
+  height: 600px;
+  width: 400px;
+  border-style: double;
+  border-right: #a80000 2px solid;
+  -webkit-box-shadow: black 1px 1px 1px;
+          box-shadow: black 1px 1px 1px;
+}
+
+.quote-block .money {
+  font-size: 1.5em;
+  width: 300px;
+  text-align: center;
+  font-style: italic;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url(assets/end.avif);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 1.5em;
+}
+
+.footer .card {
+  background-color: rgba(238, 28, 157, 0.5);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -298,15 +361,62 @@ input, select {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 1em;
+  border-radius: 1.5em;
+  border: yellow 2px solid;
+  justify-items: center;
+  width: 350px;
+  text-align: center;
 }
 
-.footer {
+.footer h3 {
+  color: white;
+  font-size: 1.5em;
+  text-shadow: black 2px 2px 2px;
+}
+
+.footer p {
+  color: white;
+}
+
+.footer button {
+  border: yellow 3px solid;
+  border-radius: 1em;
+  font-family: 'Teko', sans-serif;
+  font-size: 1.8em;
+  background-color: rgba(107, 255, 240, 0.6);
+  margin-top: 1.5em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: .3em;
+  color: black;
+  border-style: outset;
+  margin-left: 110px;
+}
+
+.footer button:hover {
+  cursor: pointer;
+  background-color: yellow;
+  border: #030303 2px solid;
+  border-radius: 1em;
+  color: black;
+}
+
+.bottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #313131;
+  padding: 1em;
+}
+
+.bottom a {
+  text-decoration: none;
+  color: white;
+  text-shadow: magenta 2px 2px 2px;
 }
 /*# sourceMappingURL=style.css.map */

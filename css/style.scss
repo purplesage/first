@@ -127,6 +127,8 @@ vertical-align:middle;
     color: white;
     padding: 1.1em;
     align-items: center;
+    position: fixed;
+    width: 100%;
 
     a{
         text-decoration: none;
@@ -173,6 +175,8 @@ vertical-align:middle;
     align-items: center;
     padding: 2em;
     border: rgb(49, 49, 49) 2px solid;
+    margin-top: 50px;
+    
     
     img{
         width: 300px;
@@ -186,6 +190,7 @@ vertical-align:middle;
         display: flex;
         flex-direction: column;
         gap: .5em;
+        margin-left: 170px;
 
     
         h1{
@@ -213,7 +218,7 @@ vertical-align:middle;
                 border: rgb(3, 3, 3) 2px solid;
                 border-radius: 1em;
                 color:black;
-                border-style: inset;
+                
             }
             
         
@@ -231,6 +236,7 @@ vertical-align:middle;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 1em;
+    border: rgb(49, 49, 49) 2px solid;
     
     
 
@@ -242,23 +248,22 @@ vertical-align:middle;
         text-shadow: rgb(255, 0, 106) 2px 2px 2px;
         
     }
-    
-    
-    img{
-        height: 250px;
-        width: 200px;
-        border: rgba(111, 0, 155, 0.397) 2px solid;
-        border-radius: 50%;
-        box-shadow: magenta 1px 4px 3px;
-    }
 
     .images{
         display: flex;
         gap: 3em;
         justify-content: center;
         margin-top: 1em;
+
+        img{
+            height: 250px;
+            width: 200px;
+            border: rgba(160, 1, 223, 0.8) 3px solid;
+            border-radius: 50%;
+            box-shadow: magenta 0.5px 4px 3px;
     
         
+        }
     }
 
     .images-text{
@@ -277,14 +282,121 @@ vertical-align:middle;
     }
 }
 
-.quote{
+.quote-block{
     display: flex;
-    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    padding: 1em;
+    border: rgb(49, 49, 49) 2px solid;
+    
+
+    .quote{
+        font-family: 'Teko', sans-serif;
+        color: black;
+        text-shadow: red 1px 1px 1px;
+        font-size: 2em;
+        align-content: center;
+        margin-top: 200px;
+        width: 300px;
+    }
+
+    .author{
+        font-family: 'Smooch', cursive;
+        font-size: 1.5em;
+        margin-bottom: 2em;
+    }
+
+    img{
+
+        height: 600px;
+        width: 400px;
+        border-style: double;
+        border-right: rgb(168, 0, 0) 2px solid;
+        box-shadow: black 1px 1px 1px;
+        
+        
+        
+
+    }
+
+    .money{
+        font-size: 1.5em;
+        width: 300px;
+        text-align: center;
+        font-style: italic;
+    }
+
 
 }
 
 .footer{
     display: flex;
-    flex-direction: row;
+    background-image: url(assets/end.avif);
+    justify-content: center;
+    align-content: center;
+    padding: 1.5em;
+    
+    .card{
+        background-color: rgba(238, 28, 157, 0.5);
+        display:flex;
+        flex-direction: column;
+        padding: 1em;
+        border-radius: 1.5em;
+        border: yellow 2px solid;
+        justify-items: center;
+        width: 350px;
+        text-align: center;
+    }
+    
+    h3{
+        color: white;
+        font-size: 1.5em;
+        text-shadow: black 2px 2px 2px;
+    }
+
+    p{
+        color:white;
+    }
+
+    button{
+        border: yellow 3px solid;
+        border-radius: 1em;
+        font-family: 'Teko', sans-serif;
+        font-size: 1.8em;
+        background-color: rgba(107, 255, 240, .6);
+        margin-top: 1.5em;
+        width: fit-content;
+        padding: .3em;
+        color: black;
+        border-style: outset;
+        margin-left: 110px;
+
+        &:hover{
+            cursor: pointer;
+            background-color: rgba(255, 255, 0, 1);
+            border: rgb(3, 3, 3) 2px solid;
+            border-radius: 1em;
+            color:black;
+            
+        }
+    
+    }
+
+
 }
 
+.bottom{
+    display:flex;
+    justify-content: center;
+    background-color: rgb(49, 49, 49);
+    padding: 1em;
+
+    a{
+        text-decoration: none;
+        color:white;
+        text-shadow: magenta 2px 2px 2px;
+    }
+
+    
+  
+}
